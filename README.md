@@ -35,6 +35,10 @@ The accelerometer is on the board, so no external sensor is needed.
 | VCC    | 3V3 | **3.3 V, not 5 V** |
 | GND    | GND | |
 
+<img width="513" height="362" alt="image" src="https://github.com/user-attachments/assets/baf202db-adfb-43a5-8fad-0f1594f3edfd" /> <img width="1024" height="982" alt="image" src="https://github.com/user-attachments/assets/6f7c3c64-4873-46c5-bc39-4f2042b88b7d" />
+
+
+
 ---
 
 ## How it works, step by step
