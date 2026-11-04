@@ -217,11 +217,3 @@ Notes:
   `.sub` RAW capture; `+value` = carrier on, `-value` = carrier off, in µs).
 - `logs.sh` — terminal serial-log viewer.
 - `logs/` — saved log files.
-
----
-
-## Safety / legal
-
-This transmits on 433.92 MHz by replaying the user's **own** gate remote. Only
-use it with a gate you are authorised to operate, and check your local rules on
-transmitting in this band.
