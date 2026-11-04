@@ -37,7 +37,9 @@ The accelerometer is on the board, so no external sensor is needed.
 
 <img width="500" height="479" alt="image" src="https://github.com/user-attachments/assets/6f7c3c64-4873-46c5-bc39-4f2042b88b7d" /> <img width="500" height="353" alt="image" src="https://github.com/user-attachments/assets/baf202db-adfb-43a5-8fad-0f1594f3edfd" /> 
 
-
+<div style="position: relative; width: 100%; padding-top: calc(max(56.25%, 400px));">
+  <iframe src="https://app.cirkitdesigner.com/project/9fe15b7d-4c4f-47c6-b2de-594f3320e1f7?view=interactive_preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
+</div>
 
 ---
 
