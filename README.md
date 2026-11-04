@@ -212,7 +212,8 @@ Notes:
 ## Files
 
 - `car_motion.ino` — the firmware.
-- `garage_signal.h` — the captured remote signal (auto-generated from a Flipper
+- `garage_signal.h` — the captured remote signal (rewritten in C/С++) 
+- `transmitter.ino` — launching the transmission of 'garage_signal.h'
   `.sub` RAW capture; `+value` = carrier on, `-value` = carrier off, in µs).
 - `logs.sh` — terminal serial-log viewer.
 - `logs/` — saved log files.
