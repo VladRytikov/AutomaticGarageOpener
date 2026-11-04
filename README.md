@@ -1,15 +1,15 @@
-# car_motion
+# Garage opener
 
-A gate/garage opener that fires **by itself when the car starts moving**.
+A garage opener that fires **by itself when the car starts moving**.
 
 The Arduino is powered from the car, so it boots when the engine starts. It then
 watches its built-in accelerometer and, once the car actually begins to move, it
 replays a captured 433.92 MHz remote signal for about a minute and shuts itself
 down until the next time the car is started. No button press, no phone, no app.
 
-The transmitted signal is a raw replay of a Flipper Zero `.sub` capture of the
+The transmitted signal is a raw replay of a Flipper Zeros pre-recorded `.sub` capture of the
 user's own gate remote (`garage_signal.h`), keyed out through a CC1101 module in
-asynchronous OOK mode — the same method as the `transmitter` sketch in this repo.
+asynchronous OOK mode.
 
 ---
 
@@ -19,6 +19,7 @@ asynchronous OOK mode — the same method as the `transmitter` sketch in this re
 |------|-------|
 | Arduino Nano 33 IoT | SAMD21, 3.3 V logic, **built-in LSM6DS3 accelerometer** |
 | CC1101 433 MHz module | 3.3 V — connects to the Nano directly, no level shifter |
+| GY-GPS6MV2 Module | 5 V — connects to the Nano directly, no level shifter |
 
 The accelerometer is on the board, so no external sensor is needed.
 
@@ -42,7 +43,7 @@ The sketch is a small state machine. Times and thresholds below are the
 defaults at the top of `car_motion.ino`.
 
 ### 1. Boot
-On power-up the firmware:
+On power-up the Arduino:
 - starts the serial log at 115200 baud **without** waiting for a host, so it
   runs identically whether or not a laptop is attached;
 - logs the **reset cause** (power-on, brown-out, upload, …) — useful for
