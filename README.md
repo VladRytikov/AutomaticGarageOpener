@@ -19,7 +19,7 @@ asynchronous OOK mode.
 |------|-------|
 | Arduino Nano 33 IoT | SAMD21, 3.3 V logic, **built-in LSM6DS3 accelerometer** |
 | CC1101 433 MHz module | 3.3 V — connects to the Nano directly, no level shifter |
-| GY-GPS6MV2 Module | 5 V — connects to the Nano directly, no level shifter |
+| GY-GPS6MV2 Module | 5 V — connects to the Nano directly (You have to solder VBUS on the back |
 
 The accelerometer is on the board, so no external sensor is needed.
 
